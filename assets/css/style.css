@@ -1,0 +1,64 @@
+ form.zcw_main_form_frontend input {
+    border: 1px solid #000;
+    border-radius: 6px;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #000;
+	 box-sizing: border-box;
+}
+form.zcw_main_form_frontend input:focus, form.zcw_main_form_frontend input:focus-visible {
+    border: 1px solid #255A90;
+    outline: 1px solid #255A90;
+}
+form.zcw_main_form_frontend p{
+	margin-bottom: 0px;
+}
+form.zcw_main_form_frontend label {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+	margin-left: 10px;
+    display: block;
+}
+form.zcw_main_form_frontend p br {
+	display: none;
+}
+form.zcw_main_form_frontend p {
+	margin-bottom: 0px;
+}
+form.zcw_main_form_frontend textarea {
+	width: 100%;
+	 padding: 12px 20px;
+    font-size: 16px;
+	 border-radius: 6px;
+    color: #000;
+	min-height: 180px;
+	 box-sizing: border-box;
+}
+form.zcw_main_form_frontend textarea:focus,
+form.zcw_main_form_frontend textarea:focus-visible {
+	 border: 1px solid #255A90;
+    outline: 1px solid #255A90;
+}
+
+form.zcw_main_form_frontend input[type="submit"]:hover {
+    transition: all 0.3s ease-in-out;
+    color: #000;
+    border-color: #000;
+    background-color: #fff;
+    box-shadow: 0px 12px 35px -22px #000;
+}
+form.zcw_main_form_frontend input[type="submit"] {
+	cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    padding: 14px 14px;
+    transition: all 0.3s ease-in-out;
+}
+.zcw_main_form_frontend h2 {
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}

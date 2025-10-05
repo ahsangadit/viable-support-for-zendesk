@@ -1,0 +1,909 @@
+body.viable-support_page_viasuzen-comments-settings,
+body.viable-support_page_viasuzen-form-settings,
+body.toplevel_page_viasuzen-settings{
+    background-color: #ebf4ff;
+}
+
+.toplevel_page_viasuzen-settings .wp-menu-image img{
+    padding: 8px !important;
+    opacity: 1 !important;
+    width: 16px;
+}
+.zc-section.zc-api-settings {
+    margin-top: 40px;
+}
+
+.zc-section.zc-api-settings .zendesk-connect-admin-wrap-main_brand_logo_zendex {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.zc-section.zc-api-settings table.form-table {
+    background-color: #fff;
+    padding: 35px;
+    border-collapse: unset;
+    border-radius: 10px;
+
+}
+
+.zc-section.zc-api-settings .form-table th,
+.zc-section.zc-api-settings .form-table td {
+    padding: 0px !important;
+    display: block;
+    width: 100%;
+}
+
+.zc-section.zc-api-settings .form-table tr {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.zc-section.zc-api-settings .form-table tr:last-child {
+    margin-bottom: 0px;
+}
+
+#zcw-remove-auth-btn {
+    background-color: #FF0000 !important;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    width: 100%;
+    border: 0px;
+    color: #fff !important;
+	transition: all 0.3s ease-in-out;
+}
+#zcw-remove-auth-btn:hover {
+	transition: all 0.3s ease-in-out;
+	    background-color: #dc3232 !important; 
+}
+
+#zcw-authorize-btn {
+    background-color: #255A90 !important;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    width: 100%;
+    border: 0px;
+    color: #fff !important;
+	transition: all 0.3s ease-in-out;
+}
+
+#zcw-authorize-btn:hover {
+	    transition: all 0.3s ease-in-out;
+    background-color: #0056b3 !important;
+}
+
+.zc-section.zc-api-settings .form-table th ,
+.zc-form-fields-group table.form-table tr th,
+.zc-top-fields-wrapper table tbody tr th {
+    margin-bottom: 16px;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.zc-section.zc-api-settings .form-table td input ,
+.zc-form-group.zc-field-wrapper.zc-internal-tags-field .zc-input-wrapper input{
+    width: 100% !important;
+    border: 2px solid #000;
+    padding: 8px 20px;
+    border-radius: 8px;
+	font-size: 16px;
+}
+.zc-section.zc-api-settings .form-table td input:focus,
+.zc-top-fields-wrapper table tbody tr td input:focus, .zc-form-fields-group table.form-table tr td input:focus{
+	 border: 2px solid #255A90;
+  outline: none;
+}
+
+.zc-section.zc-api-settings .form-table td input:focus { 
+    box-shadow: none;
+}
+
+.zc-section.zc-api-settings .form-table td input:focus-visible,
+.zc-section.zc-api-settings .form-table td input:focus-within {
+    border: 2px solid #255A90;
+    box-shadow: none;
+}
+
+.zc-section.zc-api-settings .zendesk-connect-admin-wrap-main_zendex_div_cards {
+    margin: auto;
+    max-width: 780px;
+}
+
+.zc-section.zc-api-settings .zendesk-connect-admin-wrap-main_zendex_div_cards h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px;
+}
+.zc-section.zc-widget-settings .form-table td input {
+	 border-color: #255A90 !important;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.zc-section.zc-widget-settings .form-table td input[type=radio]:checked::before  {
+	background-color: #255A90 !important;
+}
+.main_div_brands_section_zendex_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.main_submit_buttons p {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.main_submit_buttons input#submit:hover,
+.zc-form-settings-section-wrapper .zc-form-submit-button input[type="submit"]:hover {
+	transition: all 0.3s ease-in-out;
+	    background-color: #0056b3 !important;
+}
+.main_submit_buttons input#submit {
+    background-color: #255A90 !important;
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    height: fit-content !important;
+    line-height: 1.3;
+	    transition: all 0.3s ease-in-out;
+}
+
+.zc-section.zc-widget-settings {
+    margin: auto;
+    max-width: 780px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.zc-section.zc-widget-settings h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.zc-section.zc-widget-settings .form-table {
+    background-color: #fff;
+    padding: 35px;
+    border-collapse: unset;
+    border-radius: 10px;
+}
+
+.zc-section.zc-widget-settings .form-table th {
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.zc-section.zc-widget-settings .form-table td input {
+    /* width: 100% !important; */
+    border: 2px solid #000;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+.zc-section.zc-widget-settings .form-table td input[type="radio"] {
+	border-width: 1px !important;
+}
+
+.zc-section.zc-widget-settings .form-table td input:focus,
+.zc-ticket-subject-template-wrapper input:focus,
+.zc-form-group.zc-field-wrapper.zc-internal-tags-field .zc-input-wrapper input:focus {
+    border: 2px solid #255A90;
+    box-shadow: none;
+}
+
+.zc-section.zc-widget-settings .form-table th,
+.zc-section.zc-widget-settings .form-table td {
+    padding: 0px !important;
+    display: block;
+    width: 100%;
+}
+
+.zc-section.zc-widget-settings .form-table tr {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.zc-section.zc-widget-settings .form-table tr:last-child {
+    margin-bottom: 0px;
+}
+
+.zc-section.zc-widget-settings label input:checked+span svg path {
+    fill: #2271B1;
+}
+
+.zc-section.zc-widget-settings label input:checked+span svg rect {
+    stroke: #2271B1;
+}
+
+.zendesk-connect-admin-wrap-main_section label {
+    display: flex;
+    align-items: end;
+}
+
+.zendesk-connect-admin-wrap-main_section .zendesk-connect-admin-wrap-main_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.zc-section.zc-widget-settings .form-table label.zendesk-connect-admin-wrap-main_section span {
+	display: none;
+}
+.zendesk-connect-admin-wrap-main-option select {
+    border: 2px solid #000 !important;
+    /* margin-top: 12px; */
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.zc-section.zc-widget-settings .form-table tr:nth-child(1) {
+    margin-bottom: 40px;
+}
+
+ 
+.zc-section.zc-widget-settings .form-table tr:nth-child(2) textarea:focus {
+    border: 2px solid #000;
+    box-shadow: unset;
+}
+
+.zc-section.zc-widget-settings .form-table tr:nth-child(2) textarea {
+    border: 2px solid #000;
+    font-weight: bold;
+    font-size: 18px;
+    background: transparent;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+
+.zendesk-connect-admin-wrap-main_section {
+    cursor: pointer;
+}
+
+.zendesk-connect-admin-wrap-main_section.selected svg path {
+    fill: #2271B1;
+}
+
+.zendesk-connect-admin-wrap-main_section.selected svg rect {
+    stroke: #2271B1;
+}
+
+
+
+.zc-top-fields-wrapper {
+    width: 780px;
+    margin: 0px auto;
+}
+
+.zc-top-fields-wrapper table tbody tr th,
+.zc-top-fields-wrapper table tbody tr td {
+    width: 100%;
+    display: block;
+    padding: 0px;
+}
+
+.zc-top-fields-wrapper .zc-shortcode-sync-wrapper {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.zc-top-fields-wrapper .zc-shortcode-sync-wrapper .zc-shortcode-field .zc-shortcode-field-title h2 {
+    margin-top: 0;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.zc-top-fields-wrapper .zc-shortcode-sync-wrapper .zc-shortcode-field input {
+    width: 100%;
+    background-color: #fff;
+    border: 0px;
+    border-radius: 6px;
+    padding: 0;
+	font-size: 24px;
+    font-weight: 600;
+}
+
+.zc-top-fields-wrapper .zc-shortcode-sync-wrapper .zc-shortcode-field input:focus {
+    border: unset !important;
+    outline: none !important;
+    box-shadow: unset !important;
+}
+.zc-top-fields-wrapper .zc-shortcode-sync-wrapper .zc-shortcode-field input::selection{
+	background-color: transparent !important;
+}
+.zc-top-fields-wrapper H2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.zc-top-fields-wrapper .zc-shortcode-sync-wrapper .zc-shortcode-field .zc-shortcode-field-title p {
+    color: #000;
+    font-size: 14px;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 14px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.zc-top-fields-wrapper .zc-shortcode-sync-wrapper .zc-sync-button-field .description {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.3;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.zc-top-fields-wrapper .zc-shortcode-sync-wrapper .zc-sync-button-field .button.zcw-sync-button {
+    background-color: #2271B1;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    width: 100%;
+    border: 0px;
+    color: #fff !important;
+    margin-top: 12px;
+}
+
+.zc-form-settings-section-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.zc-form-settings-section-wrapper .zc-form-submit-button .submit {
+    margin: 0px;
+    padding: 0px;
+}
+
+.zc-form-settings-section-wrapper .zc-form-submit-button input[type="submit"] {
+    background-color: #255A90 !important;
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    height: fit-content !important;
+    line-height: 1.3;
+}
+.zc-form-settings-section-wrapper .zc-form-submit-button input[type="submit"]:focus,
+.main_submit_buttons input#submit:focus{
+	box-shadow: unset;
+	
+}
+
+.zc-form-settings-section-wrapper {
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+.zc-form-settings-section-wrapper .zc-form-description h2 {
+    font-size: 30px;
+    color: #000;
+}
+
+.zc-top-fields-wrapper table tr:nth-child(2) {
+    background-color: #fff;
+    border-radius: 12px 12px 0px 0px;
+    padding: 40px 40px 0px 40px;
+    display: block;
+    margin-top: 20px;
+}
+
+.zc-top-fields-wrapper table tr:nth-child(2) label {
+    margin-bottom: 12px;
+}
+
+.zc-form-fields-group {
+    width: 780px;
+    margin: auto;
+}
+
+.zc-form-fields-group table.form-table tr th,
+.zc-form-fields-group table.form-table tr td {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.zc-form-fields-group table.form-table tr th {
+    margin-bottom: 12px;
+    margin-top: 6px;
+}
+
+.zc-form-fields-group {
+    width: 700px;
+    margin: auto;
+    background-color: #fff;
+    padding: 15px 40px 40px 40px;
+    margin-top: -17px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.zc-top-fields-wrapper table tbody tr th {
+    margin-bottom: 10px;
+}
+
+.zc-top-fields-wrapper table tbody tr td input,
+.zc-form-fields-group table.form-table tr td input {
+    width: 100%;
+    background-color: #fff; 
+    border: 2px solid #000;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#zcw-fields-modal button#zcw-close-modal {
+    background-color: #255A90;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+	     position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#zcw-fields-form label {
+    font-weight: 500;
+}
+#zcw-fields-modal h3 {
+	margin-bottom: 35px;
+	text-align: center;
+}
+#zcw-fields-form button {
+    background-color: #2271B1;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    width: 100%;
+    border: 0px;
+    color: #fff !important;
+    margin-top: 12px;
+	   
+	grid-column: 1 / -1;
+}
+.zc-form-fields-group table tr:last-child input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+form#zcw-fields-form {
+    display: grid;
+	gap: 12px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.zendex-connects-wp-main-comments-setting {
+    width: 780px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.zendex-connects-wp-main-comments-setting h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.zendex-connects-wp-main-comments-setting table {
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #fff;
+    display: block;
+}
+
+.zendex-connects-wp-main-comments-setting table tr th, .zendex-connects-wp-main-comments-setting table td {
+    display: block;
+    padding: 0;
+    width: 100%;
+}
+
+
+/* Toggle Switch Style */
+.zc-toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.zc-toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.zc-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ddd;
+    border: 1px solid #2a5e96;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.zc-slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #184b86;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.zc-toggle-switch input:checked + .zc-slider {
+    background-color: #c3dafb;
+}
+
+.zc-toggle-switch input:checked + .zc-slider:before {
+    transform: translateX(22px);
+}
+.zc-toggle-switch-comment-setting label {
+    margin-left: 0 !important;
+}
+.zc-toggle-switch-comment-setting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+	margin-bottom: 25px;
+}
+
+.zendex-connects-wp-main-comments-setting table tbody, .zendex-connects-wp-main-comments-setting table tr {
+    width: 100%;
+    display: block;
+}
+select#comments_role_restriction option,
+select#comments_role_restriction {
+    text-transform: capitalize !important;
+}
+select#comments_role_restriction {
+	border: 2px solid #000 !important;
+}
+.zc-post-types-wrapper-option {
+	display: flex;
+    gap: 20px;
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+.zc-field-wrapper {
+    margin-bottom: 25px;
+}
+
+.zc-label {
+    font-size: 15px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.zc-field-wrapper select {
+    font-size: 14px;
+}
+
+.toastjs-container {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align child toasts to the right */
+  width: auto;
+  max-width: 100% !important;
+  pointer-events: none; /* Allows clicking through container if needed */
+}
+
+.toastjs {
+  background-color: #333;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  min-width: 250px;
+  max-width: 400px;
+  font-family: sans-serif;
+  pointer-events: auto;
+  text-align: left;
+}
+
+.zc-form-fields-group table tr:last-child input[type="checkbox"], .zc-form-fields-group table tr:nth-last-child(2) input[type="checkbox"], .zc-form-fields-group table tr:nth-last-child(3) input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+#zcw-fields-form button,
+#zcw-fields-modal button#zcw-close-modal {
+	cursor: pointer !important;
+}
+
+.zc-ticket-subject-template-wrapper input {
+    width: 100% ;
+    border: 2px solid #000;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.description.zc-subject-template-description code {
+background-color: #3782ee;
+    margin: 0;
+    padding: revert-layer;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-top: 10px !important;
+    display: inline-flex
+;
+}
+ .description.zc-subject-template-description { 
+    color: #000;
+	 font-size: 16px;
+}
+
+
+.zc-ticket-subject-template-wrapper {
+    margin-bottom: 25px;
+}
+.zc-form-group.zc-field-wrapper.zc-internal-tags-field {
+    margin-bottom: 0px;
+}
+
+.zc-form-group.zc-field-wrapper.zc-internal-tags-field .zc-label-wrapper {
+    margin: 6px 0px;
+}
+ 
+.description.zc-description {
+    margin-top: 10px;
+    color: #000;
+}
+.zc-form-row input.regular-text.zc-input {
+	width: 70% !important;
+}
+.zc-form-row .zc-toggle-switch-wrapper {
+    width: 30% !important;
+    display: flex !important;
+    gap: 13px !important;
+    align-items: center;
+}
+
+.zc-ticket-subject-template-wrapper input {
+	margin-top: 12px;
+}
+.zendex-connects-wp-main-comments-setting table label {
+    font-size: 16px;
+}
+
+
+#zcw-fields-form input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+
+ 
+.zc-admin-header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 0px 40px;
+}
+.zc-admin-header nav.zc-admin-nav {
+	display: flex;
+    align-items: center; 
+}
+.zc-admin-header nav.zc-admin-nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+	transition: all 0.3s ease-in-out;
+}
+.zc-admin-header nav.zc-admin-nav a:focus {
+    border: none;
+    box-shadow: unset;
+	outline: none;
+}
+.zc-admin-header .zc-logo img {
+    width: 50px;
+}
+
+body.zendesk-connect_page_zendesk-connect-comments-settings #wpcontent,
+body.zendesk-connect_page_zendesk-connect-form-settings #wpcontent {
+    padding: 0;
+}
+body.zendesk-connect_page_zendesk-connect-comments-settings .wrap,
+body.zendesk-connect_page_zendesk-connect-form-settings .wrap {
+	margin: 0px !important;
+}
+.zc-admin-header nav.zc-admin-nav a:hover {
+	transition: all 0.3s ease-in-out;
+}
+.zc-admin-header nav.zc-admin-nav a:hover:after {
+	transform: scale(1);
+}
+.zc-admin-header nav.zc-admin-nav a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+	transform: scale(0);
+    bottom: 0;
+    left: 0;
+    background-color: #255A90;
+	border-radius: 10px;
+	transition: all 0.3s ease-in-out;
+}
+.zc-admin-header nav.zc-admin-nav a.active:after {
+	height: 4px;
+	    transform: scale(1);
+}
+
+.zc-admin-header nav.zc-admin-nav a {
+    position: relative;
+    padding: 40px 30px;
+}
+
+@keyframes zcwSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+.zc-shortcode-sync-wrapper {
+  margin-top: 20px;
+}
+
+.zc-shortcode-field-title h2 {
+  margin-bottom: 10px;
+}
+
+.zc-shortcode-input-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.zc-copy-input {
+    flex: 1;
+    min-width: 200px;
+}
+
+.zc-copy-btn {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    background: #f3f3f3;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#zc-copy-feedback {
+    display: none;
+    font-size: 13px;
+    color: black;
+    margin-left: 10px;
+}
+
+.zc-preloader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.zc-spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #0073aa;
+  border-radius: 50%;
+  animation: zcwSpin 1s linear infinite;
+}
+
+@keyframes zcwSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+ 
+.zc-post-types-wrapper-option {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.zc-post-type-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.zc-role-restrict-select {
+    margin-top: 12px;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.zc-role-restrict-description {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.zc-info-icon {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.zcw-authorize-label th {
+    display: none !important;
+}
+
+.zc-field-wrapper .select2-container--default .select2-search--inline .select2-search__field {
+    padding: 5px 10px;
+    height: 30px;
+}
+.zc-field-wrapper .select2-container--default .select2-selection--multiple,body .select2-container--default.select2-container--focus .select2-selection--multiple {
+	    border: solid black 2px;
+    outline: 0;
+    border-radius: 8px;
+    min-height: 40px;
+}
+
+.zc-field-wrapper .select2-container--default .select2-selection--multiple .select2-selection__choice {
+	    background-color: #3782ee;
+    color: #fff;
+}
+
+.zc-field-wrapper .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	color: #fff;
+}
