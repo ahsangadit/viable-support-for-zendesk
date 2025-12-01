@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Class Comments_Settings
  *
- * Handles comment-related admin settings for Zendesk Connect WP plugin.
+ * Handles comment-related admin settings for Viable Support For Zendesk plugin.
  *
  * @package viablecube\viasuzen\Admin
  */

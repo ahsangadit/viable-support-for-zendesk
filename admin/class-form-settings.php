@@ -26,7 +26,7 @@ class Form_Settings
     }
 
 	/**
-	 * Enqueue frontend stylesheet for the Zendesk Connect plugin.
+	 * Enqueue frontend stylesheet for the Viable Support For Zendesk plugin.
 	 *
 	 * @author Ahsan
 	 * @since  1.0.0

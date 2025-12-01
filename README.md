@@ -1,8 +1,8 @@
 # 💬 Viable Support for Zendesk
 
-**Version:** 1.0  
+**Version:** 1.1.0  
 **Requires WordPress:** 5.0 or higher  
-**Tested up to:** 6.8  
+**Tested up to:** 6.9
 **Requires PHP:** 7.2 or higher  
 **License:** GPLv2 or later  
 **Author:** [ViableCube](https://viablecube.com)  
@@ -87,6 +87,10 @@ No. It only converts **new comments** into Zendesk tickets when automation is en
 
 ## 🧩 Changelog
 
+### v1.1.0
+
+* Tested and compatible with WordPress 6.9
+
 ### v1.0 – Initial Release
 
 * Secure Zendesk API authorization
@@ -126,3 +130,9 @@ For support, suggestions, or bug reports:
 
 > **Developed with ❤️ by [ViableCube](https://viablecube.com)**
 > Smart WordPress + Zendesk integrations for modern support teams.
+
+---
+
+## ⚠️ Requirements
+
+**Requirements:** You need to have a Zendesk account to use this plugin.

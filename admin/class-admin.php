@@ -1,6 +1,6 @@
 <?php
 /**
- * Admin menu handler for Zendesk Connect plugin.
+ * Admin menu handler for Viable Support For Zendesk plugin.
  *
  * @package     viablecube\viasuzen
  * @subpackage  Admin

@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 /**
  * Class Init
  *
- * Core initializer for the Zendesk Connect plugin.
+ * Core initializer for the Viable Support For Zendesk plugin.
  * Responsible for loading translations and providing plugin-level utilities.
  *
  * @package viablecube\viasuzen\Core

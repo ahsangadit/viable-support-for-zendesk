@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
 /**
  * Class Settings
  *
- * Handles the admin settings for Zendesk Connect WP plugin.
+ * Handles the admin settings for Viable Support For Zendesk plugin.
  *
  * @package viablecube\viasuzen\Admin
  */
@@ -88,7 +88,7 @@ class Settings
 	/**
 	 * Register plugin settings, sections, and fields.
 	 *
-	 * Handles registration of all Zendesk Connect plugin options in the WordPress Settings API.
+	 * Handles registration of all Viable Support For Zendesk plugin options in the WordPress Settings API.
 	 * Dynamically renders fields based on authorization status.
 	 *
 	 * @return void

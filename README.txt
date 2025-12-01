@@ -3,8 +3,8 @@ Contributors: viablecube, ahsangadit
 Donate link: https://viablecube.com/docs/viable-support-for-zendesk/?utm_source=vsfz&utm_medium=donate-link
 Tags: zendesk, support, helpdesk, customer support, zendesk support
 Requires at least: 5.0
-Tested up to: 6.8
-Stable tag: 1.0
+Tested up to: 6.9
+Stable tag: 1.1.0
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -16,6 +16,8 @@ Connect your Zendesk Support account with WordPress — create tickets, sync cus
 [📘 Documentation](https://viablecube.com/docs/viable-support-for-zendesk/?utm_source=vsfz&utm_medium=readme-docs) | [💬 Support](mailto:ahsan@viablecube.com)
 
 **Viable Support for Zendesk** integrates your Zendesk Support workspace directly into your WordPress site.
+
+**Note:** You need to have a Zendesk account to use this plugin.
 
 With just your Zendesk **subdomain**, **account email**, and **API token**, you can:
 
@@ -84,6 +86,9 @@ No. It only converts **new comments** into Zendesk tickets if you enable that fe
 
 == Changelog ==
 
+= 1.1.0 =  
+* Tested and compatible with WordPress 6.9
+
 = 1.0 – Initial Release =  
 * Added secure Zendesk API authentication  
 * Added dynamic text field fetching  
@@ -93,6 +98,9 @@ No. It only converts **new comments** into Zendesk tickets if you enable that fe
 * Initial stable release  
 
 == Upgrade Notice ==
+
+= 1.1.0 =  
+Tested and compatible with WordPress 6.9.
 
 = 1.0 =  
 First stable release of **Viable Support for Zendesk** connect, create, and automate tickets directly from WordPress.

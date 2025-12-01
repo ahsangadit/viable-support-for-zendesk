@@ -2,8 +2,8 @@
 /**
  * Plugin Name: Viable Support For Zendesk
  * Plugin URI:  https://viablecube.com/viable-support-for-zendesk
- * Description: Seamlessly integrate Zendesk support features with WordPress – including dynamic contact forms, comment ticketing, and Web Widget. (Formerly Zendesk Connect)
- * Version:     1.0.0
+ * Description: Seamlessly integrate Zendesk support features with WordPress – including dynamic contact forms, comment ticketing, and Web Widget. Requires a Zendesk account.
+ * Version:     1.1.0
  * Author:      Ahsan Amin
  * Author URI:  https://viablecube.com
  * License:     GPL2+
@@ -16,7 +16,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 // Define plugin constants
-define( 'VIASUZEN_VERSION', '1.0' );
+define( 'VIASUZEN_VERSION', '1.1.0' );
 define( 'VIASUZEN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'VIASUZEN_URL', plugin_dir_url( __FILE__ ) );
 define( 'VIASUZEN_FILE', __FILE__ );
