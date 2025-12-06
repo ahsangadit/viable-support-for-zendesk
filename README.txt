@@ -88,6 +88,11 @@ No. It only converts **new comments** into Zendesk tickets if you enable that fe
 
 = 1.1.0 =  
 * Tested and compatible with WordPress 6.9
+* Improved admin interface with cleaner notification display
+* Enhanced code documentation and maintainability
+* Optimized plugin performance and loading times
+* Fixed minor bugs and improved error handling
+* Updated plugin branding and naming conventions
 
 = 1.0 – Initial Release =  
 * Added secure Zendesk API authentication  
@@ -100,7 +105,7 @@ No. It only converts **new comments** into Zendesk tickets if you enable that fe
 == Upgrade Notice ==
 
 = 1.1.0 =  
-Tested and compatible with WordPress 6.9.
+WordPress 6.9 compatible with improved admin experience, enhanced performance, and better error handling.
 
 = 1.0 =  
 First stable release of **Viable Support for Zendesk** connect, create, and automate tickets directly from WordPress.

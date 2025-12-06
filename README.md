@@ -89,7 +89,12 @@ No. It only converts **new comments** into Zendesk tickets when automation is en
 
 ### v1.1.0
 
-* Tested and compatible with WordPress 6.9
+* ✅ Tested and compatible with WordPress 6.9
+* 🎨 Improved admin interface with cleaner notification display
+* 📝 Enhanced code documentation and maintainability
+* ⚡ Optimized plugin performance and loading times
+* 🐛 Fixed minor bugs and improved error handling
+* 🏷️ Updated plugin branding and naming conventions
 
 ### v1.0 – Initial Release
 
