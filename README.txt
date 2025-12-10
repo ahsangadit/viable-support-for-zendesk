@@ -4,7 +4,7 @@ Donate link: https://viablecube.com/docs/viable-support-for-zendesk/?utm_source=
 Tags: zendesk, support, helpdesk, customer support, zendesk support
 Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -104,11 +104,28 @@ No. It only converts **new comments** into Zendesk tickets if you enable that fe
 
 == Upgrade Notice ==
 
+= 1.1.1 =  
+Code improvement
+
 = 1.1.0 =  
 WordPress 6.9 compatible with improved admin experience, enhanced performance, and better error handling.
 
 = 1.0 =  
 First stable release of **Viable Support for Zendesk** connect, create, and automate tickets directly from WordPress.
+
+== External services ==
+
+This plugin connects to the Zendesk API to create support tickets, fetch custom fields, and manage ticket data. This connection is required for the plugin to function properly.
+
+The plugin sends the following data to Zendesk:
+* Zendesk subdomain (configured by the site administrator)
+* Account email and API token (for authentication)
+* Ticket data including: requester name, email, subject, message, custom fields, tags, and metadata
+* User search queries (for API authentication verification)
+
+All API requests are made server-side using secure HTTPS connections to your Zendesk subdomain (e.g., `https://your-subdomain.zendesk.com/api/v2/`).
+
+This service is provided by "Zendesk Inc": [Zendesk Terms of Service](https://www.zendesk.com/company/agreements-and-terms/), [Privacy Policy](https://www.zendesk.com/company/agreements-and-terms/privacy-policy/).
 
 == License ==
 

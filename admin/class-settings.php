@@ -185,7 +185,7 @@ class Settings
             'subdomain' => sanitize_text_field( isset( $input['subdomain']) ? $input['subdomain'] : ''),
             'api_token' => sanitize_text_field( isset( $input['api_token']) ? $input['api_token'] : ''),
             'email' => sanitize_email( isset( $input['email']) ? $input['email'] : ''),
-            'widget_code' => isset( $input['widget_code']) ? $input['widget_code'] : '',
+            'widget_code' => isset( $input['widget_code']) ? $this->sanitize_widget_code( $input['widget_code'] ) : '',
             'webwidget_display' => in_array( isset( $input['webwidget_display']) ? $input['webwidget_display'] : 'auto', array('none', 'auto'), true)
                 ? $input['webwidget_display']
                 : 'auto',
@@ -334,8 +334,10 @@ class Settings
 		$success = $this->test_zendesk_api( $subdomain, $email, $api_token );
 
 		if ( $success ) {
+			$sanitized_subdomain = sanitize_text_field( $subdomain );
+			$subdomain_escaped = addslashes( $sanitized_subdomain );
 			
-			$widget_code = 'window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src=\'javascript:var d=document.open();d.domain="' . $subdomain . '";void(0);\',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write(\'<body onload="document._l();">\'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","' . $subdomain . '");';
+			$widget_code = 'window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src=\'javascript:var d=document.open();d.domain="' . $subdomain_escaped . '";void(0);\',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write(\'<body onload="document._l();">\'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","' . $subdomain_escaped . '");';
 			$settings = array(
 				'subdomain'          => $subdomain,
 				'email'              => $email,
@@ -466,7 +468,33 @@ class Settings
 			   esc_textarea( $widget_code )
 		);
 
-	echo '<p class="description">' . esc_html__( 'This code is generated automatically after successful authorization and should not be edited manually.', 'viable-support-for-zendesk' ) . '</p>';
+		echo '<p class="description">' . esc_html__( 'This code is generated automatically after successful authorization and should not be edited manually.', 'viable-support-for-zendesk' ) . '</p>';
+	}
+
+	/**
+	 * Sanitize widget code to ensure it's safe JavaScript.
+	 *
+	 * @param string $code The widget code to sanitize.
+	 * @return string Sanitized widget code.
+	 * @author Ahsan
+	 * @since 1.1.0
+	 */
+	private function sanitize_widget_code( $code ) {
+		if ( empty( $code ) ) {
+			return '';
+		}
+
+		// Remove any HTML tags and script tags
+		$code = wp_kses( $code, array() );
+		
+		// Remove any closing script tags that could break out of inline script
+		$code = str_replace( '</script>', '', $code );
+		$code = str_replace( '<script', '', $code );
+		
+		// Remove any HTML entities that could be used for XSS
+		$code = wp_strip_all_tags( $code );
+		
+		return $code;
 	}
 
 
