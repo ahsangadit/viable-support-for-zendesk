@@ -133,7 +133,6 @@ class Settings
 		$is_authorized = get_option( 'viasuzen_authorization_status' ) === '1';
 
 		// Register either "Authorize" or "Remove Authorization" button
-		// Register either "Authorize" or "Remove Authorization" button
 		add_settings_field(
 			$is_authorized ? 'remove_authorization' : 'authorize_api',
 			$is_authorized ? __( 'Test', 'viable-support-for-zendesk' ) : "Test",
@@ -185,7 +184,6 @@ class Settings
             'subdomain' => sanitize_text_field( isset( $input['subdomain']) ? $input['subdomain'] : ''),
             'api_token' => sanitize_text_field( isset( $input['api_token']) ? $input['api_token'] : ''),
             'email' => sanitize_email( isset( $input['email']) ? $input['email'] : ''),
-            'widget_code' => isset( $input['widget_code']) ? $this->sanitize_widget_code( $input['widget_code'] ) : '',
             'webwidget_display' => in_array( isset( $input['webwidget_display']) ? $input['webwidget_display'] : 'auto', array('none', 'auto'), true)
                 ? $input['webwidget_display']
                 : 'auto',
@@ -334,15 +332,10 @@ class Settings
 		$success = $this->test_zendesk_api( $subdomain, $email, $api_token );
 
 		if ( $success ) {
-			$sanitized_subdomain = sanitize_text_field( $subdomain );
-			$subdomain_escaped = addslashes( $sanitized_subdomain );
-			
-			$widget_code = 'window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src=\'javascript:var d=document.open();d.domain="' . $subdomain_escaped . '";void(0);\',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write(\'<body onload="document._l();">\'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","' . $subdomain_escaped . '");';
 			$settings = array(
 				'subdomain'          => $subdomain,
 				'email'              => $email,
 				'api_token'          => $api_token,
-				'widget_code'        => $widget_code,
 				'webwidget_display'  => 'auto',
 			);
 
@@ -378,7 +371,7 @@ class Settings
 		unset( $settings['subdomain'] );
 		unset( $settings['email'] );
 		unset( $settings['api_token'] );
-		unset( $settings['widget_code'] );
+		// Widget code is not stored, it's generated dynamically from subdomain
 		unset( $settings['webwidget_display'] );
 
 		update_option( 'viasuzen_settings', $settings );
@@ -458,8 +451,11 @@ class Settings
 	 * @return void
 	 */
 	public function field_widget_code() {
-		$settings     = get_option( $this->option_name );
-		$widget_code  = isset( $settings['widget_code'] ) ? $settings['widget_code'] : '';
+		$settings = get_option( $this->option_name );
+		$subdomain = isset( $settings['subdomain'] ) ? $settings['subdomain'] : '';
+		
+		// Generate widget code dynamically from subdomain
+		$widget_code = $this->generate_widget_code( $subdomain );
 
 		printf(
 			   '<textarea id="viasuzen_widget_code" name="%1$s[widget_code]" rows="16" cols="50" class="large-text code" readonly placeholder="%2$s">%3$s</textarea>',
@@ -468,34 +464,26 @@ class Settings
 			   esc_textarea( $widget_code )
 		);
 
-		echo '<p class="description">' . esc_html__( 'This code is generated automatically after successful authorization and should not be edited manually.', 'viable-support-for-zendesk' ) . '</p>';
+		echo '<p class="description">' . esc_html__( 'This code is generated automatically from your subdomain after successful authorization.', 'viable-support-for-zendesk' ) . '</p>';
 	}
 
 	/**
-	 * Sanitize widget code to ensure it's safe JavaScript.
+	 * Generate Zendesk widget code from subdomain.
 	 *
-	 * @param string $code The widget code to sanitize.
-	 * @return string Sanitized widget code.
+	 * @param string $subdomain The Zendesk subdomain.
+	 * @return string Generated widget code.
 	 * @author Ahsan
 	 * @since 1.1.0
 	 */
-	private function sanitize_widget_code( $code ) {
-		if ( empty( $code ) ) {
+	private function generate_widget_code( $subdomain ) {
+		if ( empty( $subdomain ) ) {
 			return '';
 		}
 
-		// Remove any HTML tags and script tags
-		$code = wp_kses( $code, array() );
+		$sanitized_subdomain = sanitize_text_field( $subdomain );
+		$subdomain_escaped = addslashes( $sanitized_subdomain );
 		
-		// Remove any closing script tags that could break out of inline script
-		$code = str_replace( '</script>', '', $code );
-		$code = str_replace( '<script', '', $code );
-		
-		// Remove any HTML entities that could be used for XSS
-		$code = wp_strip_all_tags( $code );
-		
-		return $code;
+		return 'window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src=\'javascript:var d=document.open();d.domain="' . $subdomain_escaped . '";void(0);\',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write(\'<body onload="document._l();">\'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","' . $subdomain_escaped . '");';
 	}
-
 
 }
